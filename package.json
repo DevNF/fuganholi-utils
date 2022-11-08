@@ -1,0 +1,29 @@
+{
+  "name": "fuganholi-utils",
+  "version": "1.0.2",
+  "description": "Pacote de utilidades javascript da Fuganholi Sistemas",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevNF/nfutils.git"
+  },
+  "keywords": [
+    "utils",
+    "fuganholisistemas",
+    "fuganholiutils",
+    "utilsjs"
+  ],
+  "author": "Desenvolvimento NFService <desenvolvimento@nfservice.com.br>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DevNF/fuganholi-utils/issues"
+  },
+  "homepage": "https://github.com/DevNF/fuganholi-utils#readme",
+  "dependencies": {
+    "@types/react": "^18.0.25",
+    "moment": "^2.29.1"
+  }
+}
