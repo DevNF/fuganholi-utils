@@ -13,6 +13,14 @@ export interface FormatDateProps {
     format?: string|'DateHour'|'Date'|'Hour'|'Day'|'Mounth'|'Year';
 }
 
+export interface DiffDateProps {
+    dateOne: string|Date;
+    dateTwo: string|Date;
+    type?: 'days'|'hours'|'milliseconds'|'minutes'|'months'|'seconds'|'weeks'|'years';
+    incrementTotal?: number;
+    notNegative?: true|false;
+}
+
 export function ReplaceAll(value: string, from: string, to: string): string;
 export function FormatValue(props: FormatValueProps): string;
 export function FormatFloat(value: string): string|number;
@@ -33,7 +41,7 @@ export function AddDateYears(date: string|Date, quantity?: number): Date;
 export function RemoveDateDays(date: string|Date, quantity?: number): Date;
 export function RemoveDateMonths(date: string|Date, quantity?: number): Date;
 export function RemoveDateYears(date: string|Date, quantity?: number): Date;
-export function DiffDate(dateOne: string|Date, dateTwo: string|Date, type: 'days'|'hours'|'milliseconds'|'minutes'|'months'|'seconds'|'weeks'|'years', incrementTotal: number, notNegative: true|false): number;
+export function DiffDate(props: DiffDateProps): number;
 export function IsMobile(): boolean;
 export function ExtractUrlParams(url: string): object;
 export function multiple(...args: number): number;
